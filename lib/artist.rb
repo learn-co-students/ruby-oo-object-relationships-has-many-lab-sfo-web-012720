@@ -21,13 +21,6 @@ class Artist
         Song.all.select {|song| song.artist == self}
     end
 
-    def artist_name
-        if song.artist == nil
-            return nil
-        else
-            Song.all.select {|song| song.artist == self}
-        end
-    end
 
     def self.song_count
         Song.all.length
